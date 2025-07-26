@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - AgriServe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ecommerce.css">
+    <link rel="stylesheet" href="css/mega-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Agri</span>Serve</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li style="--i:1"><a href="index.html">Home</a></li>
+                    <li style="--i:2"><a href="about.html">About Us</a></li>
+                    <li class="has-mega-menu" style="--i:3">
+                        <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h3>Crop Information</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="crop-information.html">All Crops</a></li>
+                                        <li style="--i:2"><a href="crop-information.html#seasonal">Seasonal Guide</a></li>
+                                        <li style="--i:3"><a href="crop-information.html#diseases">Disease Management</a></li>
+                                        <li style="--i:4"><a href="crop-information.html#techniques">Farming Techniques</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Market Prices</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="market-prices.html">Current Prices</a></li>
+                                        <li style="--i:2"><a href="market-prices.html#trends">Price Trends</a></li>
+                                        <li style="--i:3"><a href="market-prices.html#forecast">Market Forecast</a></li>
+                                        <li style="--i:4"><a href="market-prices.html#export">Export Opportunities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Weather Updates</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="weather-updates.html">Local Forecast</a></li>
+                                        <li style="--i:2"><a href="weather-updates.html#seasonal">Seasonal Outlook</a></li>
+                                        <li style="--i:3"><a href="weather-updates.html#alerts">Weather Alerts</a></li>
+                                        <li style="--i:4"><a href="weather-updates.html#planning">Crop Planning</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Blog/News</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="blog.html">Latest Articles</a></li>
+                                        <li style="--i:2"><a href="blog.html#success">Success Stories</a></li>
+                                        <li style="--i:3"><a href="blog.html#innovations">Innovations</a></li>
+                                        <li style="--i:4"><a href="blog.html#policy">Policy Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Store</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="ecommerce.html" class="active">Equipment</a></li>
+                                        <li style="--i:2"><a href="ecommerce.html#seeds">Seeds & Plants</a></li>
+                                        <li style="--i:3"><a href="ecommerce.html#fertilizers">Fertilizers</a></li>
+                                        <li style="--i:4"><a href="ecommerce.html#tools">Tools & Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="--i:7"><a href="services.html">Services</a></li>
+                    <li style="--i:9"><a href="community.html">Community</a></li>
+                    <li style="--i:10"><a href="contact.html">Contact</a></li>
+                    <li style="--i:11"><a href="login.html" class="login-btn">Login</a></li>
+                    <li class="cart-icon" style="--i:12">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="search-container" style="--i:13">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>AgriServe Online Store</h1>
+            <p>Quality agricultural supplies delivered to your doorstep</p>
+        </div>
+    </section>
+
+    <section class="store-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Shop for Premium Agricultural Supplies</h2>
+                <p>Welcome to the AgriServe online store, your one-stop shop for high-quality seeds, fertilizers, tools, and more. We carefully select products from trusted manufacturers to ensure you get the best for your farm.</p>
+                <p>All products come with our quality guarantee and are delivered right to your doorstep. Browse our categories below to find what you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="container">
+            <div class="category-filter">
+                <h2>Product Categories</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Products</button>
+                    <button class="filter-btn" data-category="seeds">Seeds</button>
+                    <button class="filter-btn" data-category="fertilizers">Fertilizers</button>
+                    <button class="filter-btn" data-category="tools">Tools & Equipment</button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Seeds -->
+                <div class="product-card" data-id="seed1" data-category="seeds">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/19/45/ce/1945ce457ab53c65fb65f29d26a741d7.jpg" alt="Premium Wheat Seeds">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Seeds</div>
+                        <h3 class="product-title">Premium Wheat Seeds</h3>
+                        <div class="product-price">₹1,200</div>
+                        <p class="product-description">High-yield wheat seeds suitable for various soil types. 5kg package.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="seed2" data-category="seeds">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/1200x/57/68/60/5768607b3115c7d9eccce0b39ea1c320.jpg" alt="Organic Rice Seeds">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Seeds</div>
+                        <h3 class="product-title">Organic Rice Seeds</h3>
+                        <div class="product-price">₹950</div>
+                        <p class="product-description">Certified organic rice seeds with excellent germination rate. 3kg package.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="seed3" data-category="seeds">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/1200x/07/48/89/0748897b10406400ad4c3d8c81185e58.jpg" alt="Hybrid Corn Seeds">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Seeds</div>
+                        <h3 class="product-title">Hybrid Corn Seeds</h3>
+                        <div class="product-price">₹1,450</div>
+                        <p class="product-description">Drought-resistant hybrid corn seeds with high yield potential. 4kg package.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Fertilizers -->
+                <div class="product-card" data-id="fert1" data-category="fertilizers">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/1200x/7b/36/5d/7b365d6df30d74b171f34cac033238b7.jpg" alt="NPK Fertilizer">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Fertilizers</div>
+                        <h3 class="product-title">NPK Fertilizer</h3>
+                        <div class="product-price">₹850</div>
+                        <p class="product-description">Balanced NPK fertilizer for all-around plant nutrition. 10kg bag.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="fert2" data-category="fertilizers">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/1200x/70/3c/ec/703cec6cf5253c322d007af0b92c7cc2.jpg" alt="Organic Compost">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Fertilizers</div>
+                        <h3 class="product-title">Organic Compost</h3>
+                        <div class="product-price">₹600</div>
+                        <p class="product-description">100% organic compost made from plant materials. 15kg bag.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="fert3" data-category="fertilizers">
+                    <div class="product-image">
+                        <img src="http://gardening.bharatagri.com/cdn/shop/files/MicronutrientMIx_2_9de5ffca-8493-42db-ac5f-6d72906c6415.webp?v=1738928886" alt="Micronutrient Mix">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Fertilizers</div>
+                        <h3 class="product-title">Micronutrient Mix</h3>
+                        <div class="product-price">₹1,100</div>
+                        <p class="product-description">Essential micronutrients to prevent deficiencies in crops. 5kg container.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="product-card" data-id="tool1" data-category="tools">
+                    <div class="product-image">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/814eeILOiqL._AC_SL1500_.jpg" alt="Garden Tool Set">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Tools</div>
+                        <h3 class="product-title">Garden Tool Set</h3>
+                        <div class="product-price">₹1,800</div>
+                        <p class="product-description">Complete set of 5 essential garden tools with ergonomic handles.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="tool2" data-category="tools">
+                    <div class="product-image">
+                        <img src="https://kreateworld.in/cdn/shop/products/2edd9ad4-624a-4c47-9381-ddbab69f6b6c_1000x.jpg?v=1673863811" alt="Pruning Shears">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Tools</div>
+                        <h3 class="product-title">Pruning Shears</h3>
+                        <div class="product-price">₹750</div>
+                        <p class="product-description">Professional-grade pruning shears with stainless steel blades.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="tool3" data-category="tools">
+                    <div class="product-image">
+                        <img src="https://people.com/thmb/JdMEvACtSR70u-1-jhrqdef1n4Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PEO_XXXFLOWERWateringCan_21_RM_1651-62b39104f2594c25a7949e1480656793.jpg" alt="Watering Can">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Tools</div>
+                        <h3 class="product-title">Watering Can</h3>
+                        <div class="product-price">₹450</div>
+                        <p class="product-description">10-liter capacity watering can with removable sprinkler head.</p>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shipping-info">
+        <div class="container">
+            <h2 class="section-title">Shipping & Delivery</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Free Shipping</h3>
+                    <p>Free shipping on orders above ₹2,000 within India</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Secure Packaging</h3>
+                    <p>All products are carefully packaged to ensure safe delivery</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy for unused products in original packaging</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Support</h3>
+                    <p>Dedicated support team available 7 days a week</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-methods">
+        <div class="container">
+            <h2 class="section-title">Secure Payment Options</h2>
+            <p class="section-description">We offer multiple secure payment methods for your convenience</p>
+            <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-money-bill-wave"></i>
+                <i class="fas fa-university"></i>
+            </div>
+            <p class="payment-note">All transactions are processed through secure payment gateways to ensure your financial information remains protected.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>AgriServe is dedicated to empowering farmers with technology, knowledge, and quality products to enhance agricultural productivity and sustainability.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Rural Road, Agri District</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@agriserve.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="crop-information.html">Crop Information</a></li>
+                        <li><a href="market-prices.html">Market Prices</a></li>
+                        <li><a href="weather-updates.html">Weather Updates</a></li>
+                        <li><a href="blog.html">Blog/News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ecommerce.html">Online Store</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section services-links">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="services.html#consulting">Agricultural Consulting</a></li>
+                        <li><a href="services.html#tips">Farming Tips</a></li>
+                        <li><a href="services.html#agri-tech">Agri-Tech Services</a></li>
+                        <li><a href="services.html#schemes">Government Schemes</a></li>
+                        <li><a href="ecommerce.html">Online Store</a></li>
+                        <li><a href="#chat-container">AI Chat Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Subscribe to Newsletter</h2>
+                    <p>Stay updated with our latest news and services</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AgriServe | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/ecommerce.js"></script>
+    <script src="js/mega-menu.js"></script>
+</body>
+</html>

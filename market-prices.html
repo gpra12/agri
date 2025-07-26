@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Prices - AgriServe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/market-prices.css">
+    <link rel="stylesheet" href="css/mega-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Agri</span>Serve</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li style="--i:1"><a href="index.html">Home</a></li>
+                    <li style="--i:2"><a href="about.html">About Us</a></li>
+                    <li class="has-mega-menu" style="--i:3">
+                        <a href="#" class="active">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h3>Crop Information</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="crop-information.html">All Crops</a></li>
+                                        <li style="--i:2"><a href="crop-information.html#seasonal">Seasonal Guide</a></li>
+                                        <li style="--i:3"><a href="crop-information.html#diseases">Disease Management</a></li>
+                                        <li style="--i:4"><a href="crop-information.html#techniques">Farming Techniques</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Market Prices</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="market-prices.html" class="active">Current Prices</a></li>
+                                        <li style="--i:2"><a href="market-prices.html#trends">Price Trends</a></li>
+                                        <li style="--i:3"><a href="market-prices.html#forecast">Market Forecast</a></li>
+                                        <li style="--i:4"><a href="market-prices.html#export">Export Opportunities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Weather Updates</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="weather-updates.html">Local Forecast</a></li>
+                                        <li style="--i:2"><a href="weather-updates.html#seasonal">Seasonal Outlook</a></li>
+                                        <li style="--i:3"><a href="weather-updates.html#alerts">Weather Alerts</a></li>
+                                        <li style="--i:4"><a href="weather-updates.html#planning">Crop Planning</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Blog/News</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="blog.html">Latest Articles</a></li>
+                                        <li style="--i:2"><a href="blog.html#success">Success Stories</a></li>
+                                        <li style="--i:3"><a href="blog.html#innovations">Innovations</a></li>
+                                        <li style="--i:4"><a href="blog.html#policy">Policy Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Store</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="ecommerce.html">Equipment</a></li>
+                                        <li style="--i:2"><a href="ecommerce.html#seeds">Seeds & Plants</a></li>
+                                        <li style="--i:3"><a href="ecommerce.html#fertilizers">Fertilizers</a></li>
+                                        <li style="--i:4"><a href="ecommerce.html#tools">Tools & Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="--i:7"><a href="services.html">Services</a></li>
+                    <li style="--i:9"><a href="community.html">Community</a></li>
+                    <li style="--i:10"><a href="contact.html">Contact</a></li>
+                    <li style="--i:11"><a href="login.html" class="login-btn">Login</a></li>
+                    <li class="search-container" style="--i:12">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Market Prices</h1>
+            <p>Daily updated prices of major crops in local mandis</p>
+        </div>
+    </section>
+
+    <section class="market-intro">
+        <div class="container">
+            <h2 class="section-title">Market Rates (Mandi Bhav)</h2>
+            <p class="section-description">Access real-time market prices for various agricultural commodities across different mandis in India. Stay informed about price trends to make better selling decisions.</p>
+            
+            <div class="last-updated">
+                <p><i class="fas fa-sync-alt"></i> Last Updated: <span id="update-date">May 15, 2023</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="crop-filter">Select Crop:</label>
+                    <select id="crop-filter" class="filter-select">
+                        <option value="all">All Crops</option>
+                        <option value="wheat">Wheat</option>
+                        <option value="rice">Rice</option>
+                        <option value="maize">Maize</option>
+                        <option value="soybean">Soybean</option>
+                        <option value="cotton">Cotton</option>
+                        <option value="sugarcane">Sugarcane</option>
+                        <option value="potato">Potato</option>
+                        <option value="onion">Onion</option>
+                        <option value="tomato">Tomato</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="state-filter">Select State:</label>
+                    <select id="state-filter" class="filter-select">
+                        <option value="all">All States</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="up">Uttar Pradesh</option>
+                        <option value="mp">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="wb">West Bengal</option>
+                        <option value="karnataka">Karnataka</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="mandi-filter">Select Mandi:</label>
+                    <select id="mandi-filter" class="filter-select">
+                        <option value="all">All Mandis</option>
+                        <!-- Mandis will be populated based on state selection -->
+                    </select>
+                </div>
+                
+                <button id="apply-filters" class="btn btn-primary">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-data">
+        <div class="container">
+            <div class="price-tabs">
+                <button class="price-tab active" data-tab="table-view">Table View</button>
+                <button class="price-tab" data-tab="chart-view">Price Trends</button>
+            </div>
+            
+            <div class="tab-content active" id="table-view">
+                <div class="table-container">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Variety</th>
+                                <th>Mandi</th>
+                                <th>State</th>
+                                <th>Min Price (₹/Quintal)</th>
+                                <th>Modal Price (₹/Quintal)</th>
+                                <th>Max Price (₹/Quintal)</th>
+                                <th>Price Change</th>
+                            </tr>
+                        </thead>
+                        <tbody id="price-data-body">
+                            <!-- Sample data, will be replaced with dynamic data -->
+                            <tr>
+                                <td>Wheat</td>
+                                <td>Dara (Average)</td>
+                                <td>Khanna</td>
+                                <td>Punjab</td>
+                                <td>2,100</td>
+                                <td>2,150</td>
+                                <td>2,200</td>
+                                <td class="price-up">+50 <i class="fas fa-arrow-up"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Rice</td>
+                                <td>Basmati</td>
+                                <td>Karnal</td>
+                                <td>Haryana</td>
+                                <td>3,800</td>
+                                <td>4,000</td>
+                                <td>4,200</td>
+                                <td class="price-down">-100 <i class="fas fa-arrow-down"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Maize</td>
+                                <td>Yellow</td>
+                                <td>Bahraich</td>
+                                <td>Uttar Pradesh</td>
+                                <td>1,800</td>
+                                <td>1,850</td>
+                                <td>1,900</td>
+                                <td class="price-up">+25 <i class="fas fa-arrow-up"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Soybean</td>
+                                <td>Yellow</td>
+                                <td>Indore</td>
+                                <td>Madhya Pradesh</td>
+                                <td>3,900</td>
+                                <td>4,050</td>
+                                <td>4,150</td>
+                                <td class="price-up">+150 <i class="fas fa-arrow-up"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Cotton</td>
+                                <td>J-34 (Medium Staple)</td>
+                                <td>Abohar</td>
+                                <td>Punjab</td>
+                                <td>5,800</td>
+                                <td>6,000</td>
+                                <td>6,200</td>
+                                <td class="price-down">-200 <i class="fas fa-arrow-down"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Onion</td>
+                                <td>Red</td>
+                                <td>Lasalgaon</td>
+                                <td>Maharashtra</td>
+                                <td>1,200</td>
+                                <td>1,350</td>
+                                <td>1,500</td>
+                                <td class="price-up">+300 <i class="fas fa-arrow-up"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Potato</td>
+                                <td>Kufri Jyoti</td>
+                                <td>Agra</td>
+                                <td>Uttar Pradesh</td>
+                                <td>900</td>
+                                <td>950</td>
+                                <td>1,000</td>
+                                <td class="no-change">0 <i class="fas fa-minus"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Tomato</td>
+                                <td>Hybrid</td>
+                                <td>Kolar</td>
+                                <td>Karnataka</td>
+                                <td>1,500</td>
+                                <td>1,800</td>
+                                <td>2,100</td>
+                                <td class="price-down">-400 <i class="fas fa-arrow-down"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <button class="pagination-btn" id="prev-page" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                    <span class="page-info">Page <span id="current-page">1</span> of <span id="total-pages">1</span></span>
+                    <button class="pagination-btn" id="next-page" disabled>Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="chart-view">
+                <div class="chart-controls">
+                    <div class="chart-filter">
+                        <label for="chart-crop">Select Crop:</label>
+                        <select id="chart-crop" class="filter-select">
+                            <option value="wheat">Wheat</option>
+                            <option value="rice">Rice</option>
+                            <option value="maize">Maize</option>
+                            <option value="soybean">Soybean</option>
+                            <option value="cotton">Cotton</option>
+                            <option value="onion">Onion</option>
+                        </select>
+                    </div>
+                    <div class="chart-filter">
+                        <label for="chart-period">Time Period:</label>
+                        <select id="chart-period" class="filter-select">
+                            <option value="week">Last Week</option>
+                            <option value="month" selected>Last Month</option>
+                            <option value="quarter">Last 3 Months</option>
+                            <option value="year">Last Year</option>
+                        </select>
+                    </div>
+                    <button id="update-chart" class="btn btn-secondary">Update Chart</button>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="price-chart"></canvas>
+                </div>
+                
+                <div class="chart-info">
+                    <p>The chart shows the modal price trends for the selected crop over time. Use the filters above to customize your view.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="market-resources">
+        <div class="container">
+            <h2 class="section-title">Market Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-download"></i>
+                    <h3>Price Reports</h3>
+                    <p>Download weekly and monthly price reports in PDF format</p>
+                    <a href="#" class="btn btn-secondary">Download</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Alerts</h3>
+                    <p>Subscribe to SMS alerts for price changes in your selected crops</p>
+                    <a href="#" class="btn btn-secondary">Subscribe</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Price Calculator</h3>
+                    <p>Calculate potential earnings based on current market rates</p>
+                    <a href="#" class="btn btn-secondary">Calculate</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Transport Rates</h3>
+                    <p>Check current transportation costs to different mandis</p>
+                    <a href="#" class="btn btn-secondary">View Rates</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mandi-locator">
+        <div class="container">
+            <h2 class="section-title">Mandi Locator</h2>
+            <p class="section-description">Find the nearest mandis to your location and get directions</p>
+            
+            <div class="locator-container">
+                <div class="locator-form">
+                    <div class="form-group">
+                        <label for="district-input">Enter your district:</label>
+                        <input type="text" id="district-input" placeholder="e.g., Ludhiana, Karnal, etc.">
+                    </div>
+                    <button class="btn btn-primary" id="find-mandi">Find Nearby Mandis</button>
+                </div>
+                
+                <div class="map-container">
+                    <div id="mandi-map">
+                        <!-- Map will be loaded here -->
+                        <img src="https://images.indianexpress.com/2015/06/iit-mandi-759.jpg" alt="Mandi Map Placeholder" class="placeholder-map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2><span class="highlight">Agri</span>Serve</h2>
+                    <p>Dedicated to helping farmers grow better with expert agricultural services and support.</p>
+                    <div class="contact">
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@agriserve.com</p>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="crop-information.html">Crop Information</a></li>
+                        <li><a href="market-prices.html">Market Prices</a></li>
+                        <li><a href="weather-updates.html">Weather Updates</a></li>
+                        <li><a href="blog.html">Blog/News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ecommerce.html">Online Store</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section services-links">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="services.html#consulting">Agricultural Consulting</a></li>
+                        <li><a href="services.html#tips">Farming Tips</a></li>
+                        <li><a href="services.html#agri-tech">Agri-Tech Services</a></li>
+                        <li><a href="services.html#schemes">Government Schemes</a></li>
+                        <li><a href="#chat-container">AI Chat Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Subscribe to Newsletter</h2>
+                    <p>Stay updated with our latest news and services</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AgriServe | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="js/market-prices.js"></script>
+</body>
+</html>

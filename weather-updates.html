@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Updates - AgriServe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-updates.css">
+    <link rel="stylesheet" href="css/mega-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Agri</span>Serve</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li style="--i:1"><a href="index.html">Home</a></li>
+                    <li style="--i:2"><a href="about.html">About Us</a></li>
+                    <li class="has-mega-menu" style="--i:3">
+                        <a href="#" class="active">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h3>Crop Information</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="crop-information.html">All Crops</a></li>
+                                        <li style="--i:2"><a href="crop-information.html#seasonal">Seasonal Guide</a></li>
+                                        <li style="--i:3"><a href="crop-information.html#diseases">Disease Management</a></li>
+                                        <li style="--i:4"><a href="crop-information.html#techniques">Farming Techniques</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Market Prices</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="market-prices.html">Current Prices</a></li>
+                                        <li style="--i:2"><a href="market-prices.html#trends">Price Trends</a></li>
+                                        <li style="--i:3"><a href="market-prices.html#forecast">Market Forecast</a></li>
+                                        <li style="--i:4"><a href="market-prices.html#export">Export Opportunities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Weather Updates</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="weather-updates.html" class="active">Local Forecast</a></li>
+                                        <li style="--i:2"><a href="weather-updates.html#seasonal">Seasonal Outlook</a></li>
+                                        <li style="--i:3"><a href="weather-updates.html#alerts">Weather Alerts</a></li>
+                                        <li style="--i:4"><a href="weather-updates.html#planning">Crop Planning</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Blog/News</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="blog.html">Latest Articles</a></li>
+                                        <li style="--i:2"><a href="blog.html#success">Success Stories</a></li>
+                                        <li style="--i:3"><a href="blog.html#innovations">Innovations</a></li>
+                                        <li style="--i:4"><a href="blog.html#policy">Policy Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Store</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="ecommerce.html">Equipment</a></li>
+                                        <li style="--i:2"><a href="ecommerce.html#seeds">Seeds & Plants</a></li>
+                                        <li style="--i:3"><a href="ecommerce.html#fertilizers">Fertilizers</a></li>
+                                        <li style="--i:4"><a href="ecommerce.html#tools">Tools & Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="--i:7"><a href="services.html">Services</a></li>
+                    <li style="--i:9"><a href="community.html">Community</a></li>
+                    <li style="--i:10"><a href="contact.html">Contact</a></li>
+                    <li style="--i:11"><a href="login.html" class="login-btn">Login</a></li>
+                    <li class="search-container" style="--i:12">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Weather Updates</h1>
+            <p>Stay informed with accurate weather forecasts for your farming needs</p>
+        </div>
+    </section>
+
+    <section class="weather-intro">
+        <div class="container">
+            <h2 class="section-title">Weather Forecast</h2>
+            <p class="section-description">Access location-based weather updates, 7-day forecasts, and important alerts for rainfall and temperature changes to help you plan your farming activities effectively.</p>
+        </div>
+    </section>
+
+    <section class="location-search">
+        <div class="container">
+            <div class="search-box">
+                <h3>Find Weather for Your Location</h3>
+                <div class="search-form">
+                    <input type="text" id="location-input" placeholder="Enter your city or district...">
+                    <button id="search-location" class="btn btn-primary"><i class="fas fa-search"></i> Get Weather</button>
+                </div>
+                <div class="location-options">
+                    <button id="use-current-location" class="btn btn-secondary"><i class="fas fa-map-marker-alt"></i> Use Current Location</button>
+                    <div class="saved-locations">
+                        <span>Saved: </span>
+                        <button class="location-tag">Delhi</button>
+                        <button class="location-tag">Mumbai</button>
+                        <button class="location-tag">Bangalore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="current-weather">
+        <div class="container">
+            <div class="weather-card">
+                <div class="weather-header">
+                    <div class="location-info">
+                        <h3 id="current-location">New Delhi, India</h3>
+                        <p id="current-date">Monday, May 15, 2023</p>
+                        <p id="last-updated">Last updated: 10:30 AM</p>
+                    </div>
+                    <div class="weather-actions">
+                        <button id="refresh-weather" class="btn btn-icon"><i class="fas fa-sync-alt"></i></button>
+                        <button id="save-location" class="btn btn-icon"><i class="fas fa-bookmark"></i></button>
+                    </div>
+                </div>
+                <div class="weather-body">
+                    <div class="current-conditions">
+                        <div class="temperature-display">
+                            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Clear Sky" class="weather-icon">
+                            <div class="temperature">
+                                <span id="current-temp">32°C</span>
+                                <span class="feels-like">Feels like: <span id="feels-like-temp">34°C</span></span>
+                            </div>
+                        </div>
+                        <div class="weather-description">
+                            <h4 id="weather-condition">Clear Sky</h4>
+                            <div class="weather-details">
+                                <div class="detail">
+                                    <i class="fas fa-wind"></i>
+                                    <span id="wind-speed">12 km/h</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-tint"></i>
+                                    <span id="humidity">45%</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-compress-arrows-alt"></i>
+                                    <span id="pressure">1012 hPa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sun-info">
+                        <div class="sun-item">
+                            <i class="fas fa-sun"></i>
+                            <span>Sunrise: <span id="sunrise-time">5:45 AM</span></span>
+                        </div>
+                        <div class="sun-item">
+                            <i class="fas fa-moon"></i>
+                            <span>Sunset: <span id="sunset-time">7:15 PM</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="forecast">
+        <div class="container">
+            <h2 class="section-title">7-Day Forecast</h2>
+            <div class="forecast-tabs">
+                <button class="forecast-tab active" data-view="daily">Daily</button>
+                <button class="forecast-tab" data-view="hourly">Hourly</button>
+            </div>
+            
+            <div class="forecast-content active" id="daily-forecast">
+                <div class="forecast-cards">
+                    <!-- Day 1 (Today) -->
+                    <div class="forecast-card">
+                        <div class="forecast-day">Today</div>
+                        <div class="forecast-date">May 15</div>
+                        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Clear" class="forecast-icon">
+                        <div class="forecast-temp">
+                            <span class="max-temp">34°C</span>
+                            <span class="min-temp">24°C</span>
+                        </div>
+                        <div class="forecast-condition">Clear</div>
+                        <div class="precipitation"><i class="fas fa-tint"></i> 0%</div>
+                    </div>
+                    
+                    <!-- Day 2 -->
+                    <div class="forecast-card">
+                        <div class="forecast-day">Tue</div>
+                        <div class="forecast-date">May 16</div>
+                        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Partly Cloudy" class="forecast-icon">
+                        <div class="forecast-temp">
+                            <span class="max-temp">33°C</span>
+                            <span class="min-temp">23°C</span>
+                        </div>
+                        <div class="forecast-condition">Partly Cloudy</div>
+                        <div class="precipitation"><i class="fas fa-tint"></i> 10%</div>
+                    </div>
+                    
+                    <!-- Day 3 -->
+                    <div class="forecast-card">
+                        <div class="forecast-day">Wed</div>
+                        <div class="forecast-date">May 17</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Light Rain" class="forecast-icon">
+                        <div class="forecast-temp">
+                            <span class="max-temp">30°C</span>
+                            <span class="min-temp">22°C</span>
+                        </div>
+                        <div class="forecast-condition">Light Rain</div>
+                        <div class="precipitation"><i class="fas fa-tint"></i> 40%</div>
+                    </div>
+                    
+                    <!-- Day 4 -->
+                    <div class="forecast-card">
+                        <div class="forecast-day">Thu</div>
+                        <div class="forecast-date">May 18</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Rain" class="forecast-icon">
+                        <div class="forecast-temp">
+                            <span class="max-temp">29°C</span>
+                            <span class="min-temp">21°C</span>
+                        </div>
+                        <div class="forecast-condition">Rain</div>
+                        <div class="precipitation"><i class="fas fa-tint"></i> 60%</div>
+                    </div>
+                    
+                    <!-- Day 5 -->
+                    <div class="forecast-card">
+                        <div class="forecast-day">Fri</div>
+                        <div class="forecast-date">May 19</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Rain" class="forecast-icon">
+                        <div class="forecast-temp">
+                            <span class="max-temp">28°C</span>
+                            <span class="min-temp">20°C</span>
+                        </div>
+                        <div class="forecast-condition">Rain</div>
+                        <div class="precipitation"><i class="fas fa-tint"></i> 70%</div>
+                    </div>
+                    
+                    <!-- Day 6 -->
+                    <div class="forecast-card">
+                        <div class="forecast-day">Sat</div>
+                        <div class="forecast-date">May 20</div>
+                        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Cloudy" class="forecast-icon">
+                        <div class="forecast-temp">
+                            <span class="max-temp">30°C</span>
+                            <span class="min-temp">21°C</span>
+                        </div>
+                        <div class="forecast-condition">Cloudy</div>
+                        <div class="precipitation"><i class="fas fa-tint"></i> 30%</div>
+                    </div>
+                    
+                    <!-- Day 7 -->
+                    <div class="forecast-card">
+                        <div class="forecast-day">Sun</div>
+                        <div class="forecast-date">May 21</div>
+                        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny" class="forecast-icon">
+                        <div class="forecast-temp">
+                            <span class="max-temp">32°C</span>
+                            <span class="min-temp">22°C</span>
+                        </div>
+                        <div class="forecast-condition">Sunny</div>
+                        <div class="precipitation"><i class="fas fa-tint"></i> 5%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast-content" id="hourly-forecast">
+                <div class="hourly-forecast-container">
+                    <table class="hourly-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Condition</th>
+                                <th>Temp</th>
+                                <th>Feels Like</th>
+                                <th>Precipitation</th>
+                                <th>Humidity</th>
+                                <th>Wind</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11:00 AM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>32°C</td>
+                                <td>34°C</td>
+                                <td>0%</td>
+                                <td>45%</td>
+                                <td>12 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>33°C</td>
+                                <td>35°C</td>
+                                <td>0%</td>
+                                <td>43%</td>
+                                <td>13 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>34°C</td>
+                                <td>36°C</td>
+                                <td>0%</td>
+                                <td>40%</td>
+                                <td>14 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>2:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>34°C</td>
+                                <td>36°C</td>
+                                <td>0%</td>
+                                <td>38%</td>
+                                <td>15 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>3:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>33°C</td>
+                                <td>35°C</td>
+                                <td>0%</td>
+                                <td>39%</td>
+                                <td>14 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>4:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>32°C</td>
+                                <td>34°C</td>
+                                <td>0%</td>
+                                <td>42%</td>
+                                <td>13 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>5:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>31°C</td>
+                                <td>33°C</td>
+                                <td>0%</td>
+                                <td>45%</td>
+                                <td>12 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>6:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01d.png" alt="Clear"> Clear</td>
+                                <td>30°C</td>
+                                <td>31°C</td>
+                                <td>0%</td>
+                                <td>48%</td>
+                                <td>10 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>7:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01n.png" alt="Clear"> Clear</td>
+                                <td>28°C</td>
+                                <td>29°C</td>
+                                <td>0%</td>
+                                <td>52%</td>
+                                <td>8 km/h</td>
+                            </tr>
+                            <tr>
+                                <td>8:00 PM</td>
+                                <td><img src="https://openweathermap.org/img/wn/01n.png" alt="Clear"> Clear</td>
+                                <td>27°C</td>
+                                <td>28°C</td>
+                                <td>0%</td>
+                                <td>55%</td>
+                                <td>7 km/h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="weather-alerts">
+        <div class="container">
+            <h2 class="section-title">Weather Alerts</h2>
+            <p class="section-description">Important alerts for rainfall, temperature changes, and other weather conditions that may affect your farming activities.</p>
+            
+            <div class="alerts-container">
+                <div class="alert-card alert-warning">
+                    <div class="alert-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h3>Heavy Rainfall Expected</h3>
+                        <p>Heavy rainfall expected in Delhi NCR region on May 17-19. Prepare your fields and drainage systems.</p>
+                        <div class="alert-meta">
+                            <span class="alert-time"><i class="far fa-clock"></i> Issued: May 15, 8:00 AM</span>
+                            <span class="alert-location"><i class="fas fa-map-marker-alt"></i> Delhi NCR</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert-card alert-danger">
+                    <div class="alert-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h3>Heat Wave Alert</h3>
+                        <p>Heat wave conditions likely to prevail in Punjab, Haryana, and Rajasthan for the next 3 days. Take necessary precautions for crops and livestock.</p>
+                        <div class="alert-meta">
+                            <span class="alert-time"><i class="far fa-clock"></i> Issued: May 14, 10:30 AM</span>
+                            <span class="alert-location"><i class="fas fa-map-marker-alt"></i> Punjab, Haryana, Rajasthan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert-card alert-info">
+                    <div class="alert-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h3>Strong Winds Advisory</h3>
+                        <p>Strong winds (30-40 km/h) expected in coastal areas of Maharashtra and Gujarat on May 16. Secure your crops and structures.</p>
+                        <div class="alert-meta">
+                            <span class="alert-time"><i class="far fa-clock"></i> Issued: May 15, 9:15 AM</span>
+                            <span class="alert-location"><i class="fas fa-map-marker-alt"></i> Coastal Maharashtra, Gujarat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="weather-resources">
+        <div class="container">
+            <h2 class="section-title">Weather Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>SMS Alerts</h3>
+                    <p>Subscribe to receive weather alerts via SMS</p>
+                    <a href="#" class="btn btn-secondary">Subscribe</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Seasonal Forecast</h3>
+                    <p>View long-term seasonal weather predictions</p>
+                    <a href="#" class="btn btn-secondary">View Forecast</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <h3>Weather Data</h3>
+                    <p>Download historical weather data for your region</p>
+                    <a href="#" class="btn btn-secondary">Download</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Weather Guide</h3>
+                    <p>Learn how to interpret weather data for farming</p>
+                    <a href="#" class="btn btn-secondary">Read Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2><span class="highlight">Agri</span>Serve</h2>
+                    <p>Dedicated to helping farmers grow better with expert agricultural services and support.</p>
+                    <div class="contact">
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@agriserve.com</p>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="crop-information.html">Crop Information</a></li>
+                        <li><a href="market-prices.html">Market Prices</a></li>
+                        <li><a href="weather-updates.html">Weather Updates</a></li>
+                        <li><a href="blog.html">Blog/News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section services-links">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="services.html#consulting">Agricultural Consulting</a></li>
+                        <li><a href="services.html#tips">Farming Tips</a></li>
+                        <li><a href="services.html#agri-tech">Agri-Tech Services</a></li>
+                        <li><a href="services.html#schemes">Government Schemes</a></li>
+                        <li><a href="#chat-container">AI Chat Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Subscribe to Newsletter</h2>
+                    <p>Stay updated with our latest news and services</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AgriServe | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/weather-updates.js"></script>
+    <script src="js/mega-menu.js"></script>
+</body>
+</html>

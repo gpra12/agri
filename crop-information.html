@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Information - AgriServe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/crop-information.css">
+    <link rel="stylesheet" href="css/mega-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Agri</span>Serve</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li style="--i:1"><a href="index.html">Home</a></li>
+                    <li style="--i:2"><a href="about.html">About Us</a></li>
+                    <li class="has-mega-menu" style="--i:3">
+                        <a href="#" class="active">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h3>Crop Information</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="crop-information.html" class="active">All Crops</a></li>
+                                        <li style="--i:2"><a href="crop-information.html#seasonal">Seasonal Guide</a></li>
+                                        <li style="--i:3"><a href="crop-information.html#diseases">Disease Management</a></li>
+                                        <li style="--i:4"><a href="crop-information.html#techniques">Farming Techniques</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Market Prices</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="market-prices.html">Current Prices</a></li>
+                                        <li style="--i:2"><a href="market-prices.html#trends">Price Trends</a></li>
+                                        <li style="--i:3"><a href="market-prices.html#forecast">Market Forecast</a></li>
+                                        <li style="--i:4"><a href="market-prices.html#export">Export Opportunities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Weather Updates</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="weather-updates.html">Local Forecast</a></li>
+                                        <li style="--i:2"><a href="weather-updates.html#seasonal">Seasonal Outlook</a></li>
+                                        <li style="--i:3"><a href="weather-updates.html#alerts">Weather Alerts</a></li>
+                                        <li style="--i:4"><a href="weather-updates.html#planning">Crop Planning</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Blog/News</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="blog.html">Latest Articles</a></li>
+                                        <li style="--i:2"><a href="blog.html#success">Success Stories</a></li>
+                                        <li style="--i:3"><a href="blog.html#innovations">Innovations</a></li>
+                                        <li style="--i:4"><a href="blog.html#policy">Policy Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Store</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="ecommerce.html">Equipment</a></li>
+                                        <li style="--i:2"><a href="ecommerce.html#seeds">Seeds & Plants</a></li>
+                                        <li style="--i:3"><a href="ecommerce.html#fertilizers">Fertilizers</a></li>
+                                        <li style="--i:4"><a href="ecommerce.html#tools">Tools & Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="--i:7"><a href="services.html">Services</a></li>
+                    <li style="--i:9"><a href="community.html">Community</a></li>
+                    <li style="--i:10"><a href="contact.html">Contact</a></li>
+                    <li style="--i:11"><a href="login.html" class="login-btn">Login</a></li>
+                    <li class="search-container" style="--i:12">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Crop Information</h1>
+            <p>Comprehensive guides and resources for successful crop cultivation</p>
+        </div>
+    </section>
+
+    <section class="crop-info-intro">
+        <div class="container">
+            <h2 class="section-title">Crop Knowledge Hub</h2>
+            <p class="section-description">Access detailed information about various crops, cultivation practices, and management techniques to optimize your farming operations</p>
+            
+            <div class="crop-search">
+                <form class="crop-search-form">
+                    <input type="text" placeholder="Search for a specific crop..." class="crop-search-input">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="crop-categories">
+        <div class="container">
+            <h2 class="section-title">Crop Categories</h2>
+            <div class="categories-grid">
+                <a href="#cereals" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cereals">
+                    <h3>Cereals</h3>
+                    <p>Wheat, Rice, Maize, Barley</p>
+                </a>
+                <a href="#pulses" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1515543904379-3d757afe72e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pulses">
+                    <h3>Pulses</h3>
+                    <p>Chickpea, Lentil, Pigeon Pea</p>
+                </a>
+                <a href="#oilseeds" class="category-card">
+                    <img src="https://www.knowledge-sourcing.com/resources/wp-content/uploads/2024/02/oilseed-market.jpg" alt="Oilseeds">
+                    <h3>Oilseeds</h3>
+                    <p>Mustard, Sunflower, Soybean</p>
+                </a>
+                <a href="#vegetables" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1557844352-761f2565b576?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Vegetables">
+                    <h3>Vegetables</h3>
+                    <p>Tomato, Potato, Onion, Cabbage</p>
+                </a>
+                <a href="#fruits" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fruits">
+                    <h3>Fruits</h3>
+                    <p>Mango, Apple, Banana, Citrus</p>
+                </a>
+                <a href="#cash-crops" class="category-card">
+                    <img src="https://ownafarm.in/wp-content/uploads/2022/12/Farm-Lnad-Type-2.png" alt="Cash Crops">
+                    <h3>Cash Crops</h3>
+                    <p>Cotton, Sugarcane, Jute</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cereals" class="crop-details">
+        <div class="container">
+            <h2 class="section-title">Cereal Crops</h2>
+            <div class="crop-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="wheat">Wheat</button>
+                    <button class="tab-btn" data-tab="rice">Rice</button>
+                    <button class="tab-btn" data-tab="maize">Maize</button>
+                    <button class="tab-btn" data-tab="barley">Barley</button>
+                </div>
+                
+                <div class="tab-content active" id="wheat-content">
+                    <div class="crop-info-grid">
+                        <div class="crop-image">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.deBi1PlSarxMvMTGDQTupAHaEo?pid=Api&P=0&h=220" alt="Wheat">
+                        </div>
+                        <div class="crop-info-content">
+                            <h3>Wheat (Triticum spp.)</h3>
+                            <p>Wheat is one of the world's most important cereal crops, providing essential nutrients and calories to billions of people.</p>
+                            
+                            <div class="info-accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-seedling"></i> Best Sowing Practices</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li><strong>Sowing Time:</strong> October to December (Rabi season)</li>
+                                            <li><strong>Seed Rate:</strong> 100-125 kg/hectare</li>
+                                            <li><strong>Spacing:</strong> Row to row: 20-22.5 cm</li>
+                                            <li><strong>Depth:</strong> 5-6 cm</li>
+                                            <li><strong>Method:</strong> Line sowing with seed drill is recommended</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-mountain"></i> Soil Requirements</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li><strong>Soil Type:</strong> Well-drained loamy to clay loam soils</li>
+                                            <li><strong>pH Range:</strong> 6.0-7.5</li>
+                                            <li><strong>Drainage:</strong> Good drainage is essential</li>
+                                            <li><strong>Land Preparation:</strong> Fine tilth with 2-3 ploughings</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-bug"></i> Pest and Disease Control</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <h5>Common Pests:</h5>
+                                        <ul>
+                                            <li><strong>Aphids:</strong> Spray Imidacloprid 17.8 SL @ 100 ml/ha</li>
+                                            <li><strong>Termites:</strong> Apply Chlorpyriphos 20 EC @ 3.5-4 liters/ha</li>
+                                        </ul>
+                                        <h5>Common Diseases:</h5>
+                                        <ul>
+                                            <li><strong>Rust:</strong> Spray Propiconazole 25 EC @ 500 ml/ha</li>
+                                            <li><strong>Powdery Mildew:</strong> Spray Hexaconazole 5 EC @ 500 ml/ha</li>
+                                            <li><strong>Loose Smut:</strong> Seed treatment with Carboxin 37.5% + Thiram 37.5% @ 2g/kg seed</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-flask"></i> Fertilizer Recommendations</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li><strong>Nitrogen (N):</strong> 120 kg/ha (50% as basal, 25% at tillering, 25% at flowering)</li>
+                                            <li><strong>Phosphorus (P):</strong> 60 kg/ha (as basal application)</li>
+                                            <li><strong>Potassium (K):</strong> 40 kg/ha (as basal application)</li>
+                                            <li><strong>Zinc:</strong> 25 kg/ha Zinc Sulfate (if soil is deficient)</li>
+                                            <li><strong>Organic Manure:</strong> 10-15 tons/ha of well-decomposed FYM</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-calendar-alt"></i> Seasonal Calendar</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="seasonal-calendar">
+                                            <div class="calendar-item">
+                                                <span class="month">Oct-Nov</span>
+                                                <span class="activity">Land Preparation & Sowing</span>
+                                            </div>
+                                            <div class="calendar-item">
+                                                <span class="month">Nov-Dec</span>
+                                                <span class="activity">Germination & Early Growth</span>
+                                            </div>
+                                            <div class="calendar-item">
+                                                <span class="month">Dec-Jan</span>
+                                                <span class="activity">Tillering Stage</span>
+                                            </div>
+                                            <div class="calendar-item">
+                                                <span class="month">Jan-Feb</span>
+                                                <span class="activity">Jointing & Booting</span>
+                                            </div>
+                                            <div class="calendar-item">
+                                                <span class="month">Feb-Mar</span>
+                                                <span class="activity">Heading & Flowering</span>
+                                            </div>
+                                            <div class="calendar-item">
+                                                <span class="month">Mar-Apr</span>
+                                                <span class="activity">Grain Filling & Maturity</span>
+                                            </div>
+                                            <div class="calendar-item">
+                                                <span class="month">Apr-May</span>
+                                                <span class="activity">Harvesting & Post-Harvest</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="rice-content">
+                    <!-- Rice content will be similar to wheat with appropriate changes -->
+                    <p class="placeholder-text">Detailed information about Rice cultivation will be available soon.</p>
+                </div>
+                
+                <div class="tab-content" id="maize-content">
+                    <!-- Maize content will be similar to wheat with appropriate changes -->
+                    <p class="placeholder-text">Detailed information about Maize cultivation will be available soon.</p>
+                </div>
+                
+                <div class="tab-content" id="barley-content">
+                    <!-- Barley content will be similar to wheat with appropriate changes -->
+                    <p class="placeholder-text">Detailed information about Barley cultivation will be available soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="crop-resources">
+        <div class="container">
+            <h2 class="section-title">Additional Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Crop Guides</h3>
+                    <p>Downloadable PDF guides for various crops</p>
+                    <a href="#" class="btn btn-secondary">Download</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Tutorials</h3>
+                    <p>Step-by-step video guides on crop cultivation</p>
+                    <a href="#" class="btn btn-secondary">Watch Now</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Yield Calculator</h3>
+                    <p>Calculate potential yield based on inputs</p>
+                    <a href="#" class="btn btn-secondary">Calculate</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Expert Consultation</h3>
+                    <p>Connect with agricultural experts</p>
+                    <a href="#" class="btn btn-secondary">Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2><span class="highlight">Agri</span>Serve</h2>
+                    <p>Dedicated to helping farmers grow better with expert agricultural services and support.</p>
+                    <div class="contact">
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@agriserve.com</p>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="crop-information.html">Crop Information</a></li>
+                        <li><a href="market-prices.html">Market Prices</a></li>
+                        <li><a href="weather-updates.html">Weather Updates</a></li>
+                        <li><a href="blog.html">Blog/News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ecommerce.html">Online Store</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section services-links">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="services.html#consulting">Agricultural Consulting</a></li>
+                        <li><a href="services.html#tips">Farming Tips</a></li>
+                        <li><a href="services.html#agri-tech">Agri-Tech Services</a></li>
+                        <li><a href="services.html#schemes">Government Schemes</a></li>
+                        <li><a href="ecommerce.html">Online Store</a></li>
+                        <li><a href="#chat-container">AI Chat Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Subscribe to Newsletter</h2>
+                    <p>Stay updated with our latest news and services</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AgriServe | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/crop-information.js"></script>
+    <script src="js/mega-menu.js"></script>
+</body>
+</html>

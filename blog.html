@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Knowledge Center - AgriServe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/mega-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Agri</span>Serve</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li style="--i:1"><a href="index.html">Home</a></li>
+                    <li style="--i:2"><a href="about.html">About Us</a></li>
+                    <li class="has-mega-menu" style="--i:3">
+                        <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h3>Crop Information</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="crop-information.html">All Crops</a></li>
+                                        <li style="--i:2"><a href="crop-information.html#seasonal">Seasonal Guide</a></li>
+                                        <li style="--i:3"><a href="crop-information.html#diseases">Disease Management</a></li>
+                                        <li style="--i:4"><a href="crop-information.html#techniques">Farming Techniques</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Market Prices</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="market-prices.html">Current Prices</a></li>
+                                        <li style="--i:2"><a href="market-prices.html#trends">Price Trends</a></li>
+                                        <li style="--i:3"><a href="market-prices.html#forecast">Market Forecast</a></li>
+                                        <li style="--i:4"><a href="market-prices.html#export">Export Opportunities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Weather Updates</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="weather-updates.html">Local Forecast</a></li>
+                                        <li style="--i:2"><a href="weather-updates.html#seasonal">Seasonal Outlook</a></li>
+                                        <li style="--i:3"><a href="weather-updates.html#alerts">Weather Alerts</a></li>
+                                        <li style="--i:4"><a href="weather-updates.html#planning">Crop Planning</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Blog/News</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="blog.html">Latest Articles</a></li>
+                                        <li style="--i:2"><a href="blog.html#success">Success Stories</a></li>
+                                        <li style="--i:3"><a href="blog.html#innovations">Innovations</a></li>
+                                        <li style="--i:4"><a href="blog.html#policy">Policy Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Store</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="ecommerce.html">Equipment</a></li>
+                                        <li style="--i:2"><a href="ecommerce.html#seeds">Seeds & Plants</a></li>
+                                        <li style="--i:3"><a href="ecommerce.html#fertilizers">Fertilizers</a></li>
+                                        <li style="--i:4"><a href="ecommerce.html#tools">Tools & Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="--i:7"><a href="services.html">Services</a></li>
+                    <li style="--i:9"><a href="community.html">Community</a></li>
+                    <li style="--i:10"><a href="contact.html">Contact</a></li>
+                    <li style="--i:11"><a href="login.html" class="login-btn">Login</a></li>
+                    <li class="search-container" style="--i:12">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Blog & Knowledge Center</h1>
+            <p>Stay informed with the latest agricultural insights and success stories</p>
+        </div>
+    </section>
+
+    <section class="blog-categories">
+        <div class="container">
+            <h2 class="section-title">Knowledge Resources</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Articles & How-Tos</h3>
+                    <p>Comprehensive guides and articles on farming techniques, crop management, and agricultural innovations.</p>
+                    <a href="#articles" class="btn btn-primary">Explore Articles</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-user-friends"></i></div>
+                    <h3>Success Stories</h3>
+                    <p>Inspiring stories of farmers who have achieved remarkable results using innovative approaches.</p>
+                    <a href="#success-stories" class="btn btn-primary">Read Stories</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Monthly Tips</h3>
+                    <p>Seasonal advice and timely recommendations to help you optimize your farming activities.</p>
+                    <a href="#monthly-tips" class="btn btn-primary">View Tips</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Articles & How-Tos</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.z67MMFRaO-dIUd1sYHZp-AHaEJ?pid=Api&P=0&h=220" alt="Sustainable Farming">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">Sustainable Farming</div>
+                        <h3>10 Sustainable Farming Practices for Small Farms</h3>
+                        <p>Learn how to implement eco-friendly farming techniques that can improve soil health and reduce environmental impact.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-user"></i> Dr. Rajesh Kumar</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="http://www.croplifeasia.org/wp-content/uploads/2017/07/AdobeStock_175456298.jpeg" alt="Crop Protection">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">Crop Protection</div>
+                        <h3>Integrated Pest Management: A Comprehensive Guide</h3>
+                        <p>Discover effective strategies to manage pests while minimizing chemical use and protecting beneficial insects.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                            <span><i class="far fa-user"></i> Dr. Priya Singh</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://conservationontario.ca/fileadmin/_processed_/9/d/csm_WatershedMangement_PPheader_ee9914688b.jpg" alt="Water Management">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">Water Management</div>
+                        <h3>Water Conservation Techniques for Drought-Prone Areas</h3>
+                        <p>Learn practical methods to conserve water and maintain crop yields during periods of water scarcity.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> April 10, 2023</span>
+                            <span><i class="far fa-user"></i> Dr. Anand Sharma</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="#" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="success-stories" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Success Stories of Farmers</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://etvbharatimages.akamaized.net/etvbharat/prod-images/10-09-2023/1200-675-19478521-thumbnail-16x9-farmer-success-story.jpg" alt="Farmer Success Story">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">Organic Farming</div>
+                        <h3>From Traditional to Organic: Ramesh's Journey</h3>
+                        <p>How a small-scale farmer from Maharashtra transformed his conventional farm into a profitable organic enterprise.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 5, 2023</span>
+                            <span><i class="far fa-user"></i> AgriServe Team</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://www.motus.com/wp-content/uploads/2020/01/Precision-Farming.jpg" alt="Farmer Success Story">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">Technology Adoption</div>
+                        <h3>Precision Farming Success: Lakshmi's Story</h3>
+                        <p>How a female farmer from Tamil Nadu increased her yield by 40% through the adoption of precision farming technologies.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> May 12, 2023</span>
+                            <span><i class="far fa-user"></i> AgriServe Team</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://tractorkarvan.com/storage/images/Blogs/what-is-integrated-farming-system/Integrated-Farming-Blog.jpg" alt="Farmer Success Story">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">Diversification</div>
+                        <h3>Beyond Crops: Sukhbir's Integrated Farming Model</h3>
+                        <p>The inspiring story of a Punjab farmer who created a sustainable income through crop diversification and integrated farming.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> April 22, 2023</span>
+                            <span><i class="far fa-user"></i> AgriServe Team</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="#" class="btn btn-secondary">View All Success Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="monthly-tips" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Monthly Farming Tips</h2>
+            <div class="monthly-tips-container">
+                <div class="month-selector">
+                    <button class="month-btn active" data-month="june">June</button>
+                    <button class="month-btn" data-month="july">July</button>
+                    <button class="month-btn" data-month="august">August</button>
+                    <button class="month-btn" data-month="september">September</button>
+                </div>
+                
+                <div class="tips-content active" id="june-tips">
+                    <h3>June Farming Tips</h3>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon"><i class="fas fa-seedling"></i></div>
+                            <h4>Crop Management</h4>
+                            <ul>
+                                <li>Complete sowing of kharif crops like paddy, maize, and pulses</li>
+                                <li>Apply first dose of fertilizer to standing crops</li>
+                                <li>Monitor for early pest infestations in young crops</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon"><i class="fas fa-tint"></i></div>
+                            <h4>Water Management</h4>
+                            <ul>
+                                <li>Prepare water harvesting structures before monsoon intensifies</li>
+                                <li>Clean irrigation channels and check for blockages</li>
+                                <li>Install rainwater collection systems if not already in place</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon"><i class="fas fa-bug"></i></div>
+                            <h4>Pest Control</h4>
+                            <ul>
+                                <li>Watch for increased pest activity due to humidity</li>
+                                <li>Apply preventive measures for common monsoon pests</li>
+                                <li>Use pheromone traps to monitor pest populations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tips-content" id="july-tips">
+                    <h3>July Farming Tips</h3>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon"><i class="fas fa-seedling"></i></div>
+                            <h4>Crop Management</h4>
+                            <ul>
+                                <li>Complete any remaining kharif sowing operations</li>
+                                <li>Apply second dose of fertilizer to early-sown crops</li>
+                                <li>Thin overcrowded crop stands to optimize growth</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon"><i class="fas fa-tint"></i></div>
+                            <h4>Water Management</h4>
+                            <ul>
+                                <li>Ensure proper drainage in fields during heavy rainfall</li>
+                                <li>Monitor soil moisture levels regularly</li>
+                                <li>Prepare contingency plans for flood-prone areas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon"><i class="fas fa-bug"></i></div>
+                            <h4>Pest Control</h4>
+                            <ul>
+                                <li>Watch for fungal diseases due to high humidity</li>
+                                <li>Apply appropriate fungicides if symptoms appear</li>
+                                <li>Monitor for stem borers in rice and maize</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- August and September tips would be similar structure -->
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest farming tips, success stories, and agricultural news delivered directly to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2><span class="highlight">Agri</span>Serve</h2>
+                    <p>Dedicated to helping farmers grow better with expert agricultural services and support.</p>
+                    <div class="contact">
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@agriserve.com</p>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="crop-information.html">Crop Information</a></li>
+                        <li><a href="market-prices.html">Market Prices</a></li>
+                        <li><a href="weather-updates.html">Weather Updates</a></li>
+                        <li><a href="blog.html">Blog/News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section services-links">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="services.html#consulting">Agricultural Consulting</a></li>
+                        <li><a href="services.html#tips">Farming Tips</a></li>
+                        <li><a href="services.html#agri-tech">Agri-Tech Services</a></li>
+                        <li><a href="services.html#schemes">Government Schemes</a></li>
+                        <li><a href="#chat-container">AI Chat Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Subscribe to Newsletter</h2>
+                    <p>Stay updated with our latest news and services</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AgriServe | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/mega-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum - AgriServe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="css/mega-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Agri</span>Serve</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li style="--i:1"><a href="index.html">Home</a></li>
+                    <li style="--i:2"><a href="about.html">About Us</a></li>
+                    <li class="has-mega-menu" style="--i:3">
+                        <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h3>Crop Information</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="crop-information.html">All Crops</a></li>
+                                        <li style="--i:2"><a href="crop-information.html#seasonal">Seasonal Guide</a></li>
+                                        <li style="--i:3"><a href="crop-information.html#diseases">Disease Management</a></li>
+                                        <li style="--i:4"><a href="crop-information.html#techniques">Farming Techniques</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Market Prices</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="market-prices.html">Current Prices</a></li>
+                                        <li style="--i:2"><a href="market-prices.html#trends">Price Trends</a></li>
+                                        <li style="--i:3"><a href="market-prices.html#forecast">Market Forecast</a></li>
+                                        <li style="--i:4"><a href="market-prices.html#export">Export Opportunities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Weather Updates</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="weather-updates.html">Local Forecast</a></li>
+                                        <li style="--i:2"><a href="weather-updates.html#seasonal">Seasonal Outlook</a></li>
+                                        <li style="--i:3"><a href="weather-updates.html#alerts">Weather Alerts</a></li>
+                                        <li style="--i:4"><a href="weather-updates.html#planning">Crop Planning</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Blog/News</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="blog.html">Latest Articles</a></li>
+                                        <li style="--i:2"><a href="blog.html#success">Success Stories</a></li>
+                                        <li style="--i:3"><a href="blog.html#innovations">Innovations</a></li>
+                                        <li style="--i:4"><a href="blog.html#policy">Policy Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Store</h3>
+                                    <ul>
+                                        <li style="--i:1"><a href="ecommerce.html">Equipment</a></li>
+                                        <li style="--i:2"><a href="ecommerce.html#seeds">Seeds & Plants</a></li>
+                                        <li style="--i:3"><a href="ecommerce.html#fertilizers">Fertilizers</a></li>
+                                        <li style="--i:4"><a href="ecommerce.html#tools">Tools & Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="--i:7"><a href="services.html">Services</a></li>
+                    <li style="--i:8"><a href="community.html" class="active">Community</a></li>
+                    <li style="--i:9"><a href="contact.html">Contact</a></li>
+                    <li style="--i:10"><a href="login.html" class="login-btn">Login</a></li>
+                    <li style="--i:11" class="search-container">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Farmer Community Forum</h1>
+            <p>Connect, share knowledge, and solve problems together</p>
+        </div>
+    </section>
+
+    <section class="language-selector">
+        <div class="container">
+            <div class="language-options">
+                <span>Select Language:</span>
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी (Hindi)</option>
+                    <option value="bho">भोजपुरी (Bhojpuri)</option>
+                    <option value="mr">मराठी (Marathi)</option>
+                    <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+                    <option value="bn">বাংলা (Bengali)</option>
+                    <option value="te">తెలుగు (Telugu)</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-content">
+        <div class="container">
+            <div class="community-layout">
+                <div class="sidebar">
+                    <div class="user-profile">
+                        <div class="profile-image">
+                            <img src="https://static.vecteezy.com/system/resources/previews/018/765/757/original/user-profile-icon-in-flat-style-member-avatar-illustration-on-isolated-background-human-permission-sign-business-concept-vector.jpg" alt="User Profile">
+                        </div>
+                        <div class="profile-info">
+                            <h3 id="user-name">Guest User</h3>
+                            <p id="login-prompt">Please <a href="login.html">login</a> to participate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-categories">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#" class="active" data-category="all"><i class="fas fa-th-large"></i> All Topics</a></li>
+                            <li><a href="#" data-category="crops"><i class="fas fa-seedling"></i> Crop Management</a></li>
+                            <li><a href="#" data-category="livestock"><i class="fas fa-horse"></i> Livestock</a></li>
+                            <li><a href="#" data-category="equipment"><i class="fas fa-tractor"></i> Farm Equipment</a></li>
+                            <li><a href="#" data-category="market"><i class="fas fa-chart-line"></i> Market Trends</a></li>
+                            <li><a href="#" data-category="organic"><i class="fas fa-leaf"></i> Organic Farming</a></li>
+                            <li><a href="#" data-category="weather"><i class="fas fa-cloud-sun-rain"></i> Weather Issues</a></li>
+                            <li><a href="#" data-category="schemes"><i class="fas fa-hand-holding-usd"></i> Govt. Schemes</a></li>
+                            <li><a href="#" data-category="general"><i class="fas fa-comments"></i> General Discussion</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="trending-tags">
+                        <h3>Trending Tags</h3>
+                        <div class="tags">
+                            <a href="#" class="tag">#RabiCrops</a>
+                            <a href="#" class="tag">#OrganicFarming</a>
+                            <a href="#" class="tag">#WaterConservation</a>
+                            <a href="#" class="tag">#PestControl</a>
+                            <a href="#" class="tag">#FarmSubsidies</a>
+                            <a href="#" class="tag">#SoilHealth</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="main-content">
+                    <div class="forum-header">
+                        <h2>Discussion Boards</h2>
+                        <div class="forum-actions">
+                            <button class="btn btn-primary" id="new-topic-btn"><i class="fas fa-plus"></i> New Topic</button>
+                            <div class="forum-filter">
+                                <select id="sort-select">
+                                    <option value="recent">Most Recent</option>
+                                    <option value="popular">Most Popular</option>
+                                    <option value="replies">Most Replies</option>
+                                    <option value="views">Most Views</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discussion-list">
+                        <!-- Discussion Thread 1 -->
+                        <div class="discussion-item" data-category="crops">
+                            <div class="discussion-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">24</span>
+                                    <span class="stat-label">Replies</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">142</span>
+                                    <span class="stat-label">Views</span>
+                                </div>
+                            </div>
+                            <div class="discussion-content">
+                                <h3 class="discussion-title"><a href="#">Best practices for wheat cultivation in low rainfall areas</a></h3>
+                                <div class="discussion-meta">
+                                    <span class="category-tag crops">Crop Management</span>
+                                    <span class="post-time">Posted 2 days ago</span>
+                                    <span class="post-author">by <a href="#">RameshFarmer</a></span>
+                                </div>
+                                <p class="discussion-excerpt">I'm planning to sow wheat next season but my region has been experiencing lower than average rainfall. Looking for drought-resistant varieties and water conservation techniques...</p>
+                            </div>
+                            <div class="discussion-activity">
+                                <img src="https://static.vecteezy.com/system/resources/previews/031/725/956/non_2x/ai-generated-studio-portrait-of-handsome-indian-man-on-colour-background-photo.jpg" alt="User Avatar">
+                                <span class="activity-info">Last reply by <a href="#">KisanExpert</a> 4 hours ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Discussion Thread 2 -->
+                        <div class="discussion-item" data-category="schemes">
+                            <div class="discussion-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">18</span>
+                                    <span class="stat-label">Replies</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">95</span>
+                                    <span class="stat-label">Views</span>
+                                </div>
+                            </div>
+                            <div class="discussion-content">
+                                <h3 class="discussion-title"><a href="#">How to apply for PM-KISAN scheme benefits?</a></h3>
+                                <div class="discussion-meta">
+                                    <span class="category-tag schemes">Govt. Schemes</span>
+                                    <span class="post-time">Posted 3 days ago</span>
+                                    <span class="post-author">by <a href="#">SunilKumar</a></span>
+                                </div>
+                                <p class="discussion-excerpt">I'm trying to register for the PM-KISAN scheme but facing some issues with the documentation. Can someone guide me through the process and tell me what documents are needed?</p>
+                            </div>
+                            <div class="discussion-activity">
+                                <img src="https://img.freepik.com/premium-photo/good-looking-indian-man-with-subtle-smile-white-background-wearing-half-sleeve-formal-shirt_878783-7247.jpg" alt="User Avatar">
+                                <span class="activity-info">Last reply by <a href="#">AgriOfficer</a> 1 day ago</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Discussion Thread 3 -->
+                        <div class="discussion-item" data-category="organic">
+                            <div class="discussion-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">32</span>
+                                    <span class="stat-label">Replies</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">210</span>
+                                    <span class="stat-label">Views</span>
+                                </div>
+                            </div>
+                            <div class="discussion-content">
+                                <h3 class="discussion-title"><a href="#">Homemade organic pesticides for vegetable gardens</a></h3>
+                                <div class="discussion-meta">
+                                    <span class="category-tag organic">Organic Farming</span>
+                                    <span class="post-time">Posted 1 week ago</span>
+                                    <span class="post-author">by <a href="#">PriyaOrganic</a></span>
+                                </div>
+                                <p class="discussion-excerpt">I've been trying to avoid chemical pesticides in my vegetable garden. Has anyone had success with homemade organic solutions? I'm looking for recipes and application methods...</p>
+                            </div>
+                            <div class="discussion-activity">
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.5o4Fow8pcQzG6GdCcQuOnQHaE8?pid=Api&P=0&h=220" alt="User Avatar">
+                                <span class="activity-info">Last reply by <a href="#">GreenThumb</a> 12 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">Next <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <div class="qa-section">
+                        <h2>Quick Questions & Answers</h2>
+                        <div class="qa-filter">
+                            <button class="qa-filter-btn active" data-filter="all">All Questions</button>
+                            <button class="qa-filter-btn" data-filter="unanswered">Unanswered</button>
+                            <button class="qa-filter-btn" data-filter="answered">Answered</button>
+                        </div>
+                        
+                        <div class="qa-list">
+                            <!-- Q&A Item 1 -->
+                            <div class="qa-item answered">
+                                <div class="qa-votes">
+                                    <button class="vote-btn up"><i class="fas fa-chevron-up"></i></button>
+                                    <span class="vote-count">15</span>
+                                    <button class="vote-btn down"><i class="fas fa-chevron-down"></i></button>
+                                </div>
+                                <div class="qa-content">
+                                    <h3 class="qa-title"><a href="#">When is the best time to sow mustard seeds?</a></h3>
+                                    <div class="qa-meta">
+                                        <span class="qa-time">Asked 5 days ago</span>
+                                        <span class="qa-author">by <a href="#">NoviceFarmer</a></span>
+                                        <span class="qa-status answered">Answered</span>
+                                    </div>
+                                    <div class="qa-tags">
+                                        <a href="#" class="qa-tag">Mustard</a>
+                                        <a href="#" class="qa-tag">Sowing</a>
+                                        <a href="#" class="qa-tag">Timing</a>
+                                    </div>
+                                </div>
+                                <div class="qa-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">4</span>
+                                        <span class="stat-label">Answers</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">89</span>
+                                        <span class="stat-label">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Q&A Item 2 -->
+                            <div class="qa-item unanswered">
+                                <div class="qa-votes">
+                                    <button class="vote-btn up"><i class="fas fa-chevron-up"></i></button>
+                                    <span class="vote-count">7</span>
+                                    <button class="vote-btn down"><i class="fas fa-chevron-down"></i></button>
+                                </div>
+                                <div class="qa-content">
+                                    <h3 class="qa-title"><a href="#">How to identify and treat tomato leaf curl virus?</a></h3>
+                                    <div class="qa-meta">
+                                        <span class="qa-time">Asked 2 days ago</span>
+                                        <span class="qa-author">by <a href="#">TomatoGrower</a></span>
+                                        <span class="qa-status unanswered">Unanswered</span>
+                                    </div>
+                                    <div class="qa-tags">
+                                        <a href="#" class="qa-tag">Tomato</a>
+                                        <a href="#" class="qa-tag">Disease</a>
+                                        <a href="#" class="qa-tag">Pest Control</a>
+                                    </div>
+                                </div>
+                                <div class="qa-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">0</span>
+                                        <span class="stat-label">Answers</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">42</span>
+                                        <span class="stat-label">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Q&A Item 3 -->
+                            <div class="qa-item answered">
+                                <div class="qa-votes">
+                                    <button class="vote-btn up"><i class="fas fa-chevron-up"></i></button>
+                                    <span class="vote-count">23</span>
+                                    <button class="vote-btn down"><i class="fas fa-chevron-down"></i></button>
+                                </div>
+                                <div class="qa-content">
+                                    <h3 class="qa-title"><a href="#">Which fertilizer is best for paddy cultivation?</a></h3>
+                                    <div class="qa-meta">
+                                        <span class="qa-time">Asked 1 week ago</span>
+                                        <span class="qa-author">by <a href="#">RiceFarmer</a></span>
+                                        <span class="qa-status answered">Answered</span>
+                                    </div>
+                                    <div class="qa-tags">
+                                        <a href="#" class="qa-tag">Rice</a>
+                                        <a href="#" class="qa-tag">Fertilizer</a>
+                                        <a href="#" class="qa-tag">Paddy</a>
+                                    </div>
+                                </div>
+                                <div class="qa-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">8</span>
+                                        <span class="stat-label">Answers</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">156</span>
+                                        <span class="stat-label">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ask-question">
+                            <button class="btn btn-primary" id="ask-question-btn"><i class="fas fa-question-circle"></i> Ask a Question</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="community-sidebar">
+                    <div class="community-stats">
+                        <h3>Community Stats</h3>
+                        <div class="stat-grid">
+                            <div class="stat-box">
+                                <i class="fas fa-users"></i>
+                                <span class="stat-number">12,458</span>
+                                <span class="stat-label">Members</span>
+                            </div>
+                            <div class="stat-box">
+                                <i class="fas fa-comments"></i>
+                                <span class="stat-number">8,742</span>
+                                <span class="stat-label">Discussions</span>
+                            </div>
+                            <div class="stat-box">
+                                <i class="fas fa-question-circle"></i>
+                                <span class="stat-number">5,291</span>
+                                <span class="stat-label">Questions</span>
+                            </div>
+                            <div class="stat-box">
+                                <i class="fas fa-reply"></i>
+                                <span class="stat-number">31,845</span>
+                                <span class="stat-label">Replies</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="active-users">
+                        <h3>Active Members</h3>
+                        <ul class="user-list">
+                            <li>
+                                <img src="https://static.vecteezy.com/system/resources/previews/031/725/956/non_2x/ai-generated-studio-portrait-of-handsome-indian-man-on-colour-background-photo.jpg" alt="User Avatar">
+                                <div class="user-info">
+                                    <h4><a href="#">KisanExpert</a></h4>
+                                    <span class="user-role expert">Expert Farmer</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.EIP8-9BnLkk91T7QZUxcgAAAAA?pid=Api&P=0&h=220" alt="User Avatar">
+                                <div class="user-info">
+                                    <h4><a href="#">AgriOfficer</a></h4>
+                                    <span class="user-role official">Agriculture Officer</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://thumbs.dreamstime.com/b/portrait-young-happy-indian-business-man-executive-looking-camera-eastern-male-professional-teacher-smiling-ethnic-bearded-216635184.jpg" alt="User Avatar">
+                                <div class="user-info">
+                                    <h4><a href="#">PriyaOrganic</a></h4>
+                                    <span class="user-role member">Active Member</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse3.mm.bing.net/th/id/OIP.OX0USSv5UbuRv-8QJ9nu6AHaE8?pid=Api&P=0&h=220" alt="User Avatar">
+                                <div class="user-info">
+                                    <h4><a href="#">RameshFarmer</a></h4>
+                                    <span class="user-role member">Active Member</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://img.freepik.com/premium-photo/headshot-portrait-attractive-confident-indian-hispanic-man-with-toothy-smile-looking-camera_908985-13278.jpg" alt="User Avatar">
+                                <div class="user-info">
+                                    <h4><a href="#">GreenThumb</a></h4>
+                                    <span class="user-role member">Active Member</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="upcoming-events">
+                        <h3>Upcoming Events</h3>
+                        <div class="event-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">15</span>
+                                    <span class="event-month">Oct</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4><a href="#">Organic Farming Workshop</a></h4>
+                                    <p><i class="fas fa-map-marker-alt"></i> Patna Agricultural Center</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">22</span>
+                                    <span class="event-month">Oct</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4><a href="#">Farmer's Market Exhibition</a></h4>
+                                    <p><i class="fas fa-map-marker-alt"></i> Delhi Exhibition Grounds</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">05</span>
+                                    <span class="event-month">Nov</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4><a href="#">Modern Irrigation Techniques</a></h4>
+                                    <p><i class="fas fa-map-marker-alt"></i> Virtual Webinar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Topic Modal -->
+    <div class="modal" id="new-topic-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create New Topic</h2>
+            <form id="new-topic-form">
+                <div class="form-group">
+                    <label for="topic-title">Title</label>
+                    <input type="text" id="topic-title" placeholder="Enter topic title" required>
+                </div>
+                <div class="form-group">
+                    <label for="topic-category">Category</label>
+                    <select id="topic-category" required>
+                        <option value="">Select a category</option>
+                        <option value="crops">Crop Management</option>
+                        <option value="livestock">Livestock</option>
+                        <option value="equipment">Farm Equipment</option>
+                        <option value="market">Market Trends</option>
+                        <option value="organic">Organic Farming</option>
+                        <option value="weather">Weather Issues</option>
+                        <option value="schemes">Govt. Schemes</option>
+                        <option value="general">General Discussion</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="topic-tags">Tags (comma separated)</label>
+                    <input type="text" id="topic-tags" placeholder="e.g., wheat, irrigation, fertilizer">
+                </div>
+                <div class="form-group">
+                    <label for="topic-content">Content</label>
+                    <textarea id="topic-content" rows="8" placeholder="Describe your topic in detail..." required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-topic">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Post Topic</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Ask Question Modal -->
+    <div class="modal" id="ask-question-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Ask a Question</h2>
+            <form id="ask-question-form">
+                <div class="form-group">
+                    <label for="question-title">Question</label>
+                    <input type="text" id="question-title" placeholder="What do you want to ask?" required>
+                </div>
+                <div class="form-group">
+                    <label for="question-details">Details</label>
+                    <textarea id="question-details" rows="6" placeholder="Provide more details about your question..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="question-tags">Tags (comma separated)</label>
+                    <input type="text" id="question-tags" placeholder="e.g., rice, disease, irrigation">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-question">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Post Question</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2><span class="highlight">Agri</span>Serve</h2>
+                    <p>Empowering farmers with technology, information, and community support to enhance agricultural productivity and rural livelihoods.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> +91 1234567890</span>
+                        <span><i class="fas fa-envelope"></i> info@agriserve.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="crop-information.html">Crop Information</a></li>
+                        <li><a href="market-prices.html">Market Prices</a></li>
+                        <li><a href="weather-updates.html">Weather Updates</a></li>
+                        <li><a href="blog.html">Blog/News</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AgriServe | All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/community.js"></script>
+    <script src="js/mega-menu.js"></script>
+</body>
+</html>
